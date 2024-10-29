@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Signup.css">
+    <title>Signup with PGLIFE</title>
+</head>
+<body>
+    <h2>Signup with PGLIFE</h2>
+    <form action="php/signup.php" method="POST">
+        <input type="text" name="Full_Name" placeholder="Full Name" required>
+        <input type="text" name="Username" placeholder="Username" required>
+        <input type="text" name="Phone_number" placeholder="Phone Number" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <input type="text" name="College_name" placeholder="College Name" required>
+        <div>I'm a
+        <input type="radio" id="male" name="Gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="Gender" value="other" required>
+        <label for="other">Other</label>
+        </div>
+        <button type="submit">Create Account</button>
+    </form>
+    <div>Already have an account?</div>
+    <a href="login.html">Login</a>
+</body>
+</html>

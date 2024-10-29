@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Login.css">
+    <title>Login with PGLIFE</title>
+</head>
+<body>
+    <h2>Login with PGLife</h2>
+    <form action="php/Login.php" method="POST">
+        <input type="text" name="Email" placeholder="Email" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <input type="hidden" id="city" name="city">
+        <button type="submit">Login</button>
+    </form>
+    <div>Don't have an account?</div>
+    <a href="Signup.html">Sign Up</a>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const city = urlParams.get('city');
+        document.getElementById('city').value = city;
+    </script>
+</body>
+</html>

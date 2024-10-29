@@ -1,0 +1,100 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.navbar .logo img {
+    max-width: 100%; 
+    height: auto;
+}
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.navbar ul li {
+    margin-left: 40px; 
+    margin-right: 40px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500; 
+    border-radius: 15px;
+}
+.navbar ul li a:hover {
+    box-shadow:  inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.white {
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;}
+.page-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;}
+.city-heading{
+    text-align: center;
+    margin-top: 20px;}
+.row{
+    display: flex;
+    justify-content: center;}
+img{
+    width: 100px;
+    height:100px;
+    margin-bottom:20px;}
+.city-card-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+.city-card{
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(243, 70, 70, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    }
+.city-card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+.footer-container {
+    margin:auto;
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.65);
+    }
+.footer-city a {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;} 
+.footer-container div.copyright {
+    margin-top: 20px;
+    text-align: center;
+    flex-basis: 100%;
+    color:rgba(255, 255, 255, 0.7); 
+}
+@media (max-width: 768px) {
+    .city-card-container {
+        flex-direction: column;
+    } }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; 
+    }
+    
+           
